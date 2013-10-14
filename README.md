@@ -18,7 +18,7 @@ Contains a couple of customisations for persistent data storage & [N-Coded](http
     $ sudo docker build -t jabbslad/ghost .
     $ sudo docker run -p 49186:2368 -d -v /tmp/docker/data:/src/content/data -v /tmp/docker/images:/src/content/images -t jabbslad/ghost
 
-Open [http://<hostname>:49186/ghost](http://<hostname>:49186/ghost) in browser
+Open `http://<hostname>:49186/ghost` in browser
 
 ## To Do
 
