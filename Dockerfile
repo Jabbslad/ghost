@@ -16,12 +16,12 @@ RUN apt-get install -y nodejs
 RUN apt-get install -y unzip
 RUN apt-get install -y wget
 
-ADD ghost.zip /src
-ADD config.js /src
+ADD ghost.zip /src/
+ADD config.js /src/
 
-RUN cd /src ; unzip ghost.zip ; npm install --production
+RUN cd /src ; ls ; unzip ghost.zip ; npm install --production
 
-ADD theme/* /src/content/themes
+ADD theme/ /src/content/themes/
 
 VOLUME ["/src/content/data", "/src/content/images"]
 
