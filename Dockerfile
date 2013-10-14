@@ -1,6 +1,10 @@
-MAINTAINER https://github.com/Jabbslad/ghost
+# Ghost
+#
+# VERSION               0.1
 
 FROM ubuntu:latest
+
+MAINTAINER https://github.com/Jabbslad/ghost
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise universe" >> /etc/apt/sources.list
 
