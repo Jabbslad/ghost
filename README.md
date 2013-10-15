@@ -1,9 +1,11 @@
 Ghost for Docker
 =====
 
-Docker container for the [Ghost](http://ghost.org/about) blogging platform.
+Docker image builder for the [Ghost](http://ghost.org/about) blogging platform.
 
 Contains a couple of customisations for persistent data storage & [N-Coded](https://github.com/polygonix/N-Coded) theme.
+
+See it running at [end.io](http://end.io).
 
 ## Requirements
 
