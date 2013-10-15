@@ -1,6 +1,6 @@
-# Ghost
+# Ghost Dockerfile
 #
-# VERSION               0.1
+# VERSION               0.2
 
 FROM ubuntu:latest
 
@@ -16,12 +16,12 @@ RUN apt-get install -y nodejs
 RUN apt-get install -y unzip
 RUN apt-get install -y wget
 
-ADD ghost.zip /src/
 ADD config.js /src/
 
+RUN cd /src ; wget -O ghost.zip https://en.ghost.org/zip/ghost-0.3.2.zip
 RUN cd /src ; ls ; unzip ghost.zip ; npm install --production
 
-ADD theme/ /src/content/themes/
+ADD themes/ /src/content/themes/
 
 VOLUME ["/src/content/data", "/src/content/images"]
 
