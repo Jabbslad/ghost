@@ -14,7 +14,7 @@ Contains a couple of customisations for persistent data storage & [N-Coded](http
 
     $ git clone https://github.com/Jabbslad/ghost.git
     $ cd ghost # tweak config.js as required
-    $ sh setup.sh
+    $ bash setup.sh
     $ sudo docker build -t jabbslad/ghost .
     $ sudo docker run -p 49186:2368 -d -v /tmp/docker/data:/src/content/data -v /tmp/docker/images:/src/content/images -t jabbslad/ghost
 
